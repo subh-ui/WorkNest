@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 function get_database_connection(): mysqli
 {
-    $connection = new mysqli('127.0.0.1', 'root', '', 'worknest');
+    $connection = new mysqli('sql303.infinityfree.com', 'if0_42973974', 'Pj3jz0HwKR', 'if0_42973974_worknest');
 
     if ($connection->connect_errno) {
         throw new RuntimeException('Database connection failed. Import database.sql in phpMyAdmin first.');
